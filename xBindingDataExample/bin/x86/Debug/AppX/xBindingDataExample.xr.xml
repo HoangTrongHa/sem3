@@ -47,9 +47,13 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="RenderTransform" />
       <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="Rotation" />
+    </RootType>
     <RootType FullName="xBindingDataExample.MainPage" />
   </Roots.RootTypes>
 </Roots>
