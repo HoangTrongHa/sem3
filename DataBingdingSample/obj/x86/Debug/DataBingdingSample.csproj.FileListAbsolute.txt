@@ -1,0 +1,9 @@
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\DataBingdingSample.csprojAssemblyReference.cache
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\App.g.i.cs
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\App.g.cs
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\MainPage.g.cs
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\App.xaml
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\MainPage.xaml
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\App.xbf
+C:\Users\h\source\repos\DataBingdingSample\obj\x86\Debug\MainPage.xbf

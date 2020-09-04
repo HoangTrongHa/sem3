@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\h\source\repos\FakeNews\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-14T04:41:06.292</Modified>
+      <Modified>2020-08-17T02:01:25.241</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -98,11 +98,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\source\repos\FakeNews\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-08-14T04:41:05.581</Modified>
+      <Modified>2020-08-17T02:01:24.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\source\repos\FakeNews\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-08-14T04:41:05.581</Modified>
+      <Modified>2020-08-17T02:01:24.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -114,7 +114,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\source\repos\FakeNews\bin\x86\Debug\Core\FakeNews.exe">
       <PackagePath>FakeNews.exe</PackagePath>
-      <Modified>2020-08-14T04:41:06.286</Modified>
+      <Modified>2020-08-17T02:01:25.211</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

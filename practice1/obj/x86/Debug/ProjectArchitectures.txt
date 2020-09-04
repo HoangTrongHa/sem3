@@ -1,0 +1,2 @@
+C:\Users\h\source\repos\DataAccessLibrary\DataAccessLibrary.csproj;x86
+C:\Users\h\source\repos\practice1\practice1.csproj;x86

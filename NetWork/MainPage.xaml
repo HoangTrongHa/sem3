@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="NetWork.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NetWork"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
+    Loaded="Page_Loaded">
+    <StackPanel>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Name="DateResult" FontSize="16" Foreground="Black" HorizontalAlignment="Left" Margin="40,0,0,40"/>
+            <TextBlock Name="TitleResult" FontSize="18" Foreground="Black" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <Image Name="ImageResult" Width="600" Height="500" HorizontalAlignment="Center"/>
+            <TextBlock Name="ContentResult1" FontSize="14" Foreground="Black" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
