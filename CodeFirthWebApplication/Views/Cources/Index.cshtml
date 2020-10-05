@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CodeFirthWebApplication.Models.Cource>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Creadits)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Creadits)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CourceID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CourceID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CourceID })
+        </td>
+    </tr>
+}
+
+</table>

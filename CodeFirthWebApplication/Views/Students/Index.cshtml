@@ -1,0 +1,64 @@
+﻿@model PagedList.IPagedList<CodeFirthWebApplication.Models.Student>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+   Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Index","Student",FormMethod.Get))
+{
+    <p>
+        Find  By Name: @Html.TextBox("search")
+        <input type="submit" value="search"/>
+    </p>
+}
+<table class="table">
+ 
+   <tr>
+     
+    <th>
+            @Html.ActionLink("Ten","Index", new { sortOrder = ViewBag.NameSortParm,
+           current = ViewBag.CurrentSort
+       })
+        </th>
+       <th>First Name</th>
+        <th>
+            @Html.ActionLink( "Ngay Nhap Hoc", "Index", new { sortOrder = ViewBag.DateSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("Dia chi", "Index", new { sortOrder = ViewBag.AddressSortParm })
+        </th>
+      
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.LastName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FistMidName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.EnrollmentDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Address)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+    </td>
+</tr>
+}
+
+</table>
+<br />
+Page @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page,sortOrder = ViewBag.CurrentSort,current = ViewBag.current}))

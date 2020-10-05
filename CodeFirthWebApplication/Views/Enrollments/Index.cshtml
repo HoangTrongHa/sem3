@@ -1,0 +1,46 @@
+﻿@model IEnumerable<CodeFirthWebApplication.Models.Enrollment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GetCource.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GetStudent.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.getGrade)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GetCource.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GetStudent.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.getGrade)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EnrollmentId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EnrollmentId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EnrollmentId })
+        </td>
+    </tr>
+}
+
+</table>

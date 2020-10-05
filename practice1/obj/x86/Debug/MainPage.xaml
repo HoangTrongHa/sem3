@@ -14,7 +14,8 @@
             <TextBox x:ConnectionId='3' Name="Number" Text="Number"></TextBox>
             <Button x:ConnectionId='4'                >Add Contact</Button>
             <Button x:ConnectionId='5'                     >Search Contact</Button>
-            <ListView x:ConnectionId='6' Name="Output">
+            <Button x:ConnectionId='6'                       >Show</Button>
+            <ListView x:ConnectionId='7' Name="Output">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding}"/>

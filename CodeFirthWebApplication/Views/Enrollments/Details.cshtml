@@ -1,0 +1,43 @@
+﻿@model CodeFirthWebApplication.Models.Enrollment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Enrollment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GetCource.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GetCource.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GetStudent.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GetStudent.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.getGrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.getGrade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EnrollmentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

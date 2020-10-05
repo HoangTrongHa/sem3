@@ -1,4 +1,5 @@
 ﻿using DataAccessLibrary;
+using SQLitePCL;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,6 +24,8 @@ namespace practice1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+       
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -32,14 +35,18 @@ namespace practice1
             DataAccess.AddData(Name.Text);
             DataAccess.AddData(Number.Text);
 
-            Output.ItemsSource = DataAccess.GetData();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+          
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Output.ItemsSource = DataAccess.GetData();
+
+        }
     }
 }

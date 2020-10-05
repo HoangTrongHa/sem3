@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\h\source\repos\practice1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-04T02:48:01.215</Modified>
+      <Modified>2020-09-04T03:03:31.198</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\h\source\repos\practice1\bin\x86\Debug\practice1.exe">
       <PackagePath>entrypoint\practice1.exe</PackagePath>
-      <Modified>2020-09-04T02:48:00.078</Modified>
+      <Modified>2020-09-04T03:03:30.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\.nuget\packages\microsoft.data.sqlite.core\3.1.7\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\source\repos\DataAccessLibrary\bin\x86\Debug\DataAccessLibrary.dll">
       <PackagePath>DataAccessLibrary.dll</PackagePath>
-      <Modified>2020-09-04T02:12:08.947</Modified>
+      <Modified>2020-09-04T03:02:56.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -122,11 +122,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\source\repos\practice1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-04T02:12:14.430</Modified>
+      <Modified>2020-09-04T03:03:30.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\source\repos\practice1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-04T02:47:59.914</Modified>
+      <Modified>2020-09-04T03:03:30.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -138,7 +138,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\h\source\repos\practice1\bin\x86\Debug\Core\practice1.exe">
       <PackagePath>practice1.exe</PackagePath>
-      <Modified>2020-09-04T02:48:01.205</Modified>
+      <Modified>2020-09-04T03:03:31.190</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

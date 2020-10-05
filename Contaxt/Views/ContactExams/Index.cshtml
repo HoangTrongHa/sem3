@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Contaxt.Models.ContactExam>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@using (Html.BeginForm("Index", "ContactExam", FormMethod.Get))
+{
+    <p>
+        Find  By Name: @Html.TextBox("searchString")
+        <input type="submit" value="searchString" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.groupname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateofhire)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateofbirth)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.groupname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateofhire)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateofbirth)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>
